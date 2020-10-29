@@ -1,0 +1,58 @@
+Respuesta e:
+
+BETA:
+crea el repositorio llamado : “TP_SO_i2_Equipo” con readme y un archivo llamado fork.txt
+
+GAMMA:
+hace el Fork al repositotio de BETA
+
+git clone https://github.com/christianthomas66/TP_SO_i2_115_v2
+edita fork.txt con sus datos
+git status
+git add .
+git commit -m "punto 2"
+git push
+
+ALFA:
+hace el Fork al repositorio de BETA
+git clone https://github.com/ferUTN/TP_SO_i2_115_v2.git
+
+edita fork.txt con sus datos
+
+git status
+git add .
+git commit -m "punto 3"
+git push
+
+BETA:
+
+git clone https://github.com/federicoaner/TP_SO_i2_115_v2.git
+
+agrega archivo NuevoDato.txt
+
+git status
+git add .
+git commit -m "punto 4"
+git push
+
+ALFA:
+
+$ git remote add upstream https://github.com/federicoaner/TP_SO_i2_115_v2.git
+git fetch upstream
+git rebase upstream/master
+
+Hubo problemas, entonces:
+git reset --hard origin/main
+git pull
+git push
+
+GAMMA:
+
+$ git remote add upstream https://github.com/federicoaner/TP_SO_i2_115_v2.git
+git fetch upstream
+git rebase upstream/master
+
+Hubo problemas, entonces:
+git reset --hard origin/main
+git pull
+git push
